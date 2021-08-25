@@ -2,6 +2,7 @@
   height: 70rem;
   background-color: $color-black;
   overflow: scroll;
+  @include hideScrollBar;
 }
 
 .container__research {

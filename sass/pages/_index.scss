@@ -6,6 +6,8 @@
   align-items: center;
   justify-content: center;
 
+  @include hideScrollBar;
+
   @include respond(small) {
     flex-direction: column;
     justify-content: flex-start;
