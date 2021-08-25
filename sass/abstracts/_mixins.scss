@@ -1,0 +1,14 @@
+// media query manager
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == small {
+    @media (max-width: 56.25em) {
+      @content;
+    }
+  }
+  @if $breakpoint == large {
+    @media (min-width: 131.25em) {
+      @content;
+    }
+  }
+}

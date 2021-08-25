@@ -1,0 +1,107 @@
+.nav {
+  width: 100%;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 4rem;
+  position: fixed;
+  z-index: 1;
+  background: $color-black;
+
+  @include respond(small) {
+    height: 6rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__logo a {
+    color: $color-secondary;
+    font-size: 1.5rem;
+    letter-spacing: 0.8rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.2s ease-in-out;
+    animation-name: appear;
+    animation-duration: 1s;
+    margin-left: 1rem;
+
+    @include respond(small) {
+      letter-spacing: 1.2rem;
+    }
+
+    &:hover {
+      color: $color-primary;
+      transform: translate(0, -0.1rem);
+    }
+  }
+
+  &__links {
+    font-size: 1.25rem;
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    letter-spacing: 0.2rem;
+    position: relative;
+    left: 4rem;
+    list-style-type: none;
+    animation-name: appear;
+    animation-duration: 1s;
+    margin-right: 2rem;
+
+    @include respond(small) {
+      left: 0;
+      margin-right: 0;
+    }
+
+    a {
+      font-weight: 300;
+      color: $color-secondary;
+      text-decoration: none;
+      padding: 0.5rem;
+      display: inline-block;
+      transition: all 0.2s ease-in-out;
+      animation-name: appear;
+      animation-duration: 1s;
+
+      @include respond(small) {
+        padding: 0 2rem;
+      }
+    }
+
+    a:hover {
+      color: $color-primary;
+      transform: translate(0, -0.1rem);
+    }
+  }
+
+  &.sticky {
+    transition: background-color 1s ease;
+    background: $color-grey;
+  }
+}
+
+#active {
+  color: $color-primary;
+}
+
+// @media (max-width: 900px) {
+//   .nav {
+//     height: 6rem;
+//     flex-direction: column;
+//     align-items: center;
+
+//     &__logo a {
+//       letter-spacing: 1.2rem;
+//     }
+//     &__links {
+//       left: 0;
+//       margin-right: 0;
+
+//       a {
+//         padding: 0 2rem;
+//       }
+//     }
+//   }
+// }

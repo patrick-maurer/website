@@ -1,0 +1,71 @@
+.footer {
+  height: 15rem;
+  background-size: cover;
+  background-position: bottom;
+  position: relative;
+
+  &__outline {
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0.1rem;
+  }
+}
+
+.impressum {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: flex-end;
+  color: $color-secondary;
+  margin-bottom: 0.5rem;
+  margin-right: 0.5rem;
+
+  @include respond(small) {
+    width: 100%;
+    justify-content: center;
+    margin-right: 0;
+  }
+
+  &__contact {
+    margin: 0 0.8rem;
+    color: $color-secondary;
+    transition: all 0.2s ease-in-out;
+  }
+
+  &__contact:hover {
+    color: $color-primary;
+    cursor: pointer;
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+  }
+
+  img {
+    opacity: 0.4;
+    height: 1rem;
+    margin: 0 0.8rem;
+    color: $color-secondary;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+  }
+
+  img:hover {
+    opacity: 1;
+  }
+
+  &__datenschutz {
+    margin: 0 0.8rem;
+    color: $color-secondary;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+
+    &:hover {
+      color: $color-primary;
+    }
+  }
+}

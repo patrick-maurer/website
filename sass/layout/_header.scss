@@ -1,0 +1,25 @@
+.header {
+  height: 50rem;
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include respond(small) {
+    height: 35rem;
+  }
+
+  @include respond(large) {
+    height: 70rem;
+  }
+
+  &__outline {
+    width: 100vw;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: translate(0, 0.1rem);
+  }
+}

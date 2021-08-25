@@ -1,0 +1,55 @@
+.index__main {
+  height: 30rem;
+  background-color: $color-black;
+  display: flex;
+  overflow: scroll;
+  align-items: center;
+  justify-content: center;
+
+  @include respond(small) {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
+
+.index__container {
+  width: 90%;
+  margin: 0rem 5rem;
+  color: $color-primary;
+  display: flex;
+
+  @include respond(small) {
+    margin: 3rem;
+    color: $color-primary;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    bottom: 4rem;
+  }
+
+  &-image {
+    height: 15rem;
+    width: 15rem;
+    margin: auto 2rem;
+    padding: 1rem;
+    border-radius: 50%;
+
+    @include respond(small) {
+      height: 12rem;
+      width: 12rem;
+      margin: 0 auto;
+      padding: 1rem;
+      border-radius: 50%;
+    }
+  }
+
+  &-text {
+    padding: 2rem 1rem;
+
+    @include respond(small) {
+      font-size: 0.9rem;
+      text-align: justify;
+      padding: 2rem 1rem;
+    }
+  }
+}

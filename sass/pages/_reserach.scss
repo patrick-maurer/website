@@ -1,0 +1,47 @@
+.main__research {
+  height: 70rem;
+  background-color: $color-black;
+  overflow: scroll;
+}
+
+.container__research {
+  margin: 5rem 5rem;
+  color: $color-primary;
+  display: flex;
+
+  &-image {
+    height: 15rem;
+    margin: auto 0;
+    padding: 1rem;
+    border-radius: 2rem;
+  }
+
+  &-text {
+    text-align: justify;
+    padding: 2rem 1rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .main__research {
+    font-size: 0.9rem;
+  }
+  .container__research {
+    margin: 3rem;
+    color: $color-primary;
+    display: flex;
+    flex-direction: column;
+
+    &-image {
+      height: 15rem;
+      margin: 0 auto;
+    }
+    &-text {
+      text-align: justify;
+      padding: 3rem 1rem;
+    }
+  }
+  .container__research:nth-of-type(2) {
+    flex-direction: column-reverse;
+  }
+}
