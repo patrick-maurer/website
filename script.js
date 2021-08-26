@@ -5,14 +5,11 @@ const nav = document.querySelector('.nav')
 const fadeBox = document.querySelector('.fader__textbox')
 const headerImg = document.querySelector('.header')
 const contact = document.querySelector('.impressum__contact')
-const slides = document.querySelectorAll('.gallery__slider__element')
-const btnPrv = document.querySelector('.gallery__slider__btnPrv')
-const btnNxt = document.querySelector('.gallery__slider__btnNxt')
 
 // expand contact
 contact.addEventListener('click', function () {
   if (contact.textContent == 'Patrick Maurer') {
-    contact.textContent = 'Technikerstraße 21a 6020 Innsbruck'
+    contact.textContent = 'contactDetails'
   } else contact.textContent = 'Patrick Maurer'
 })
 
@@ -48,25 +45,3 @@ const obsOptions = {
 }
 const headerObserver = new IntersectionObserver(obsCallback, obsOptions)
 headerObserver.observe(headerImg)
-
-// slider
-let currentSlide = 4
-
-const manualNav = function (manual) {
-  slides.forEach((slide) => {
-    slide.classList.remove('active')
-  })
-  slides[Math.abs(manual)].classList.add('active')
-}
-
-btnNxt.addEventListener('click', () => {
-  currentSlide = (currentSlide + 1) % 5
-  manualNav(currentSlide)
-  console.log(currentSlide)
-})
-
-btnPrv.addEventListener('click', () => {
-  currentSlide = (currentSlide - 1) % 5
-  manualNav(currentSlide)
-  console.log(currentSlide)
-})

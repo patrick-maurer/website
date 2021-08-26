@@ -5,12 +5,15 @@
   overflow: scroll;
   align-items: center;
   justify-content: center;
+  height: 70vh;
 
   @include hideScrollBar;
 
   @include respond(small) {
     flex-direction: column;
     justify-content: flex-start;
+    height: 50vh;
+    margin: 3rem 0rem;
   }
 }
 
@@ -22,11 +25,11 @@
 
   @include respond(small) {
     margin: 3rem;
+    padding-bottom: -3rem;
     color: $color-primary;
     display: flex;
     flex-direction: column;
     position: relative;
-    bottom: 4rem;
   }
 
   &-image {
@@ -51,7 +54,6 @@
     @include respond(small) {
       font-size: 0.9rem;
       text-align: justify;
-      padding: 2rem 1rem;
     }
   }
 }
