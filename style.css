@@ -80,9 +80,15 @@ body {
     padding-right: 2rem;
     text-align: start;
     animation: appearLeft 1.5s ease; }
+    @media (max-width: 46.25em) {
+      .fader__firstline {
+        animation: appear 1.5s ease !important; } }
   .fader__secondline {
     text-align: left;
     animation: appearRight 1.5s ease; }
+    @media (max-width: 46.25em) {
+      .fader__secondline {
+        animation: appear 1.5s ease !important; } }
 
 .hide {
   opacity: 0; }
@@ -175,8 +181,7 @@ body {
     .nav {
       height: 8rem;
       flex-direction: column;
-      align-items: center;
-      animation-name: none !important; } }
+      align-items: center; } }
   .nav__logo a {
     color: #ffefe250;
     font-size: 1.5rem;

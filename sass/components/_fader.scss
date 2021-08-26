@@ -27,11 +27,19 @@
     padding-right: 2rem;
     text-align: start;
     animation: appearLeft 1.5s ease;
+
+    @include respond(small) {
+      animation: appear 1.5s ease !important;
+    }
   }
 
   &__secondline {
     text-align: left;
     animation: appearRight 1.5s ease;
+
+    @include respond(small) {
+      animation: appear 1.5s ease !important;
+    }
   }
 }
 
