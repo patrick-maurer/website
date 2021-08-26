@@ -104,6 +104,9 @@ body {
     position: absolute;
     left: -0.1rem;
     bottom: 0.2rem; }
+  @media (max-width: 46.25em) {
+    .footer {
+      height: 10rem; } }
 
 .impressum {
   width: 100%;
@@ -116,7 +119,7 @@ body {
   margin-right: 0.5rem; }
   @media (max-width: 46.25em) {
     .impressum {
-      width: 100%;
+      font-size: 0.9rem;
       justify-content: center;
       margin-right: 0; } }
   .impressum__contact {

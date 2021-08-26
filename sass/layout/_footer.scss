@@ -11,6 +11,10 @@
     left: -0.1rem;
     bottom: 0.2rem;
   }
+
+  @include respond(small) {
+    height: 10rem;
+  }
 }
 
 .impressum {
@@ -24,7 +28,7 @@
   margin-right: 0.5rem;
 
   @include respond(small) {
-    width: 100%;
+    font-size: 0.9rem;
     justify-content: center;
     margin-right: 0;
   }
