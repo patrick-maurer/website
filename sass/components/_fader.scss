@@ -26,7 +26,7 @@
   &__firstline {
     padding-right: 2rem;
     text-align: start;
-    animation: appearLeft 1.5s ease;
+    animation: appearLeft 2.5s ease;
 
     @include respond(small) {
       animation: appear 2s ease !important;
@@ -35,7 +35,7 @@
 
   &__secondline {
     text-align: left;
-    animation: appearRight 1.5s ease;
+    animation: appearRight 2.5s ease;
 
     @include respond(small) {
       animation: appear 2s ease !important;

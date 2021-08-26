@@ -14,19 +14,15 @@
 
 @keyframes appearLeft {
   0% {
-    opacity: 0;
-    transform: translate(-3rem); }
+    opacity: 0; }
   100% {
-    opacity: 1;
-    transform: translate(0rem); } }
+    opacity: 1; } }
 
 @keyframes appearRight {
   0% {
-    opacity: 0;
-    transform: translate(4rem); }
+    opacity: 0; }
   100% {
-    opacity: 1;
-    transform: translate(0rem); } }
+    opacity: 1; } }
 
 @keyframes showHeader {
   0% {
@@ -85,13 +81,13 @@ body {
   .fader__firstline {
     padding-right: 2rem;
     text-align: start;
-    animation: appearLeft 1.5s ease; }
+    animation: appearLeft 2.5s ease; }
     @media (max-width: 50rem) {
       .fader__firstline {
         animation: appear 2s ease !important; } }
   .fader__secondline {
     text-align: left;
-    animation: appearRight 1.5s ease; }
+    animation: appearRight 2.5s ease; }
     @media (max-width: 50rem) {
       .fader__secondline {
         animation: appear 2s ease !important; } }
