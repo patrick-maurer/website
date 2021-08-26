@@ -2,14 +2,14 @@ body {
   @include hideScrollBar;
 }
 
-.main__research {
+.main__projects {
   height: 70rem;
   background-color: $color-black;
   overflow: scroll;
   @include hideScrollBar;
 }
 
-.container__research {
+.container__projects {
   margin: 5rem 5rem;
   color: $color-primary;
   display: flex;
@@ -28,12 +28,12 @@ body {
   }
 }
 
-@media (max-width: 900px) {
-  .main__research {
+@media (max-width: 46.25em) {
+  .main__projects {
     font-size: 0.9rem;
     margin-bottom: 3rem;
   }
-  .container__research {
+  .container__projects {
     margin: 3rem;
     color: $color-primary;
     display: flex;
@@ -49,7 +49,7 @@ body {
       padding: 3rem 1rem;
     }
   }
-  .container__research:nth-of-type(2) {
+  .container__projects:nth-of-type(2) {
     flex-direction: column-reverse;
   }
 }

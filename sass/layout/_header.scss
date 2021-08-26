@@ -8,7 +8,7 @@
   align-items: center;
 
   @include respond(small) {
-    height: 35rem;
+    height: 30rem;
   }
 
   @include respond(large) {

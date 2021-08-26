@@ -10,14 +10,20 @@
     rel="stylesheet"
   />
     <link rel="stylesheet" href="style.css" />
-    <title>Research</title>
+    <title>Projects</title>
   </head>
   <style>
     .header {
       background-image: linear-gradient(#00000080 0%, #000000bf 100%),
         url('images/wallpapers/wallpaperResearch.jpg');
       animation: showHeader 2.5s ease;
-      height: 20rem;
+      animation-fill-mode: forwards;
+    }
+    @media (max-width: 46.25em) {
+      .header{
+      animation: showHeaderSmall 2.5s ease;
+      animation-fill-mode: forwards;
+      }
     }
     .footer {
       background-image: linear-gradient(#00000080 0%, #000000bf 100%),
@@ -29,16 +35,16 @@
       <div class="nav__logo"><a href="index.html">Patrick Maurer</a></div>
       <ul class="nav__links">
         <li>
-          <a href="research.html"  id="active">Projects</a>
+          <a href="projects.html"  id="active">Projects</a>
         </li>
       </ul>
     </nav>
     <header class="header">
     </header>
-    <main class="main__research">
-      <div class="container__research">
-        <img class="container__research-image" src="images/profilePicture.jpg" alt="" />
-        <div class="container__research-text">
+    <main class="main__projeccts">
+      <div class="container__projects">
+        <img class="container__projects-image" src="images/profilePicture.jpg" alt="" />
+        <div class="container__projects-text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, neque? Asperiores, et.
           Nesciunt modi repellendus obcaecati vero corporis similique a libero. Eos magni animi rem,
           quisquam quibusdam beatae modi ipsum! Quibusdam alias facere ipsum eligendi soluta maxime
@@ -52,9 +58,9 @@
           distinctio.
         </div>
       </div>
-      <div class="container__research">
+      <div class="container__projects">
         
-        <div class="container__research-text">
+        <div class="container__projects-text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, neque? Asperiores, et.
           Nesciunt modi repellendus obcaecati vero corporis similique a libero. Eos magni animi rem,
           quisquam quibusdam beatae modi ipsum! Quibusdam alias facere ipsum eligendi soluta maxime
@@ -67,11 +73,11 @@
           in quos nihil alias? Cumque quae id tenetur sed ipsum cum recusandae consequuntur
           distinctio.
         </div>
-        <img class="container__research-image" src="images/profilePicture.jpg" alt="" />
+        <img class="container__projects-image" src="images/profilePicture.jpg" alt="" />
       </div>
-      <div class="container__research">
-        <img class="container__research-image" src="images/profilePicture.jpg" alt="" />
-        <div class="container__research-text">
+      <div class="container__projects">
+        <img class="container__projects-image" src="images/profilePicture.jpg" alt="" />
+        <div class="container__projects-text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, neque? Asperiores, et.
           Nesciunt modi repellendus obcaecati vero corporis similique a libero. Eos magni animi rem,
           quisquam quibusdam beatae modi ipsum! Quibusdam alias facere ipsum eligendi soluta maxime
@@ -85,7 +91,7 @@
           distinctio.
         </div>
       </div>
-      <div class="container__research">
+      <div class="container__projects">
     </main>
     <footer class='footer'><img src="images/wallpapers/footerOutline.png" alt="footerOutline" class="footer__outline" />
       <div class="impressum">
