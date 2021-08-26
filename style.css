@@ -88,13 +88,13 @@ body {
     animation: appearLeft 1.5s ease; }
     @media (max-width: 50rem) {
       .fader__firstline {
-        animation: appear 1.5s ease !important; } }
+        animation: appear 2s ease !important; } }
   .fader__secondline {
     text-align: left;
     animation: appearRight 1.5s ease; }
     @media (max-width: 50rem) {
       .fader__secondline {
-        animation: appear 1.5s ease !important; } }
+        animation: appear 2s ease !important; } }
 
 .hide {
   opacity: 0; }
@@ -220,7 +220,7 @@ body {
     letter-spacing: 0.2rem;
     position: relative;
     list-style-type: none;
-    animation-name: appearAndMove;
+    animation-name: appear;
     animation-duration: 1s;
     animation-fill-mode: forwards;
     margin-right: 2rem; }
