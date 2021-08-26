@@ -2,12 +2,12 @@
 
 @mixin respond($breakpoint) {
   @if $breakpoint == small {
-    @media (max-width: 46.25em) {
+    @media (max-width: 50rem) {
       @content;
     }
   }
   @if $breakpoint == large {
-    @media (min-width: 131.25em) {
+    @media (min-width: 131.25rem) {
       @content;
     }
   }
