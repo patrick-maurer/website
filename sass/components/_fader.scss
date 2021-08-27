@@ -3,15 +3,14 @@
   font-weight: bold;
   font-size: 3rem;
   line-height: 150%;
-  position: absolute;
-  transform: translate(0, -50%);
+  height: fit-content;
 
   @include respond(small) {
     font-size: 1.9rem;
     margin: 0 2rem;
     position: relative;
-    top: 6rem;
-    height: 10rem;
+    height: fit-content;
+    padding: 2rem 0rem;
   }
 
   @include respond(large) {
@@ -24,9 +23,9 @@
   }
 
   &__firstline {
-    padding-right: 2rem;
     text-align: start;
     animation: appearLeft 2.5s ease;
+    margin-right: 1rem;
 
     @include respond(small) {
       animation: appear 2s ease !important;
@@ -36,6 +35,7 @@
   &__secondline {
     text-align: left;
     animation: appearRight 2.5s ease;
+    height: 6rem;
 
     @include respond(small) {
       animation: appear 2s ease !important;

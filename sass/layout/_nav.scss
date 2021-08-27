@@ -2,7 +2,7 @@
   width: 100%;
   font-weight: 500;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   height: 4rem;
   position: fixed;
@@ -13,6 +13,7 @@
     height: 8rem;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
   }
 
   &__logo a {
@@ -21,41 +22,35 @@
     letter-spacing: 0.8rem;
     text-transform: uppercase;
     text-decoration: none;
-    display: inline-block;
-    transition: all 0.2s ease-in-out;
     animation-name: appear;
-    animation-duration: 1s;
+    animation-duration: 2s;
     animation-fill-mode: forwards;
-    margin-left: 1rem;
-
-    @include respond(small) {
-      letter-spacing: 0.8rem;
-      font-size: 1.2rem;
-      animation-name: none !important;
-    }
+    margin-left: 4rem;
 
     &:hover {
       color: $color-primary;
-      transform: translate(0, -0.1rem);
+    }
+
+    @include respond(small) {
+      font-size: 1.3rem;
+      letter-spacing: 0.5rem;
+      margin-left: 0rem;
     }
   }
 
   &__links {
-    font-size: 1.25rem;
+    font-size: 1.3rem;
     display: flex;
     justify-content: flex-end;
-    width: 40%;
-    padding: 0.5rem 0rem;
     letter-spacing: 0.2rem;
     position: relative;
     list-style-type: none;
     animation-name: appear;
-    animation-duration: 1s;
+    animation-duration: 3s;
     animation-fill-mode: forwards;
     margin-right: 2rem;
 
     @include respond(small) {
-      left: 0;
       margin-right: 0;
       margin-top: -2rem;
       justify-content: center;
@@ -67,20 +62,15 @@
       font-weight: 300;
       color: $color-secondary;
       text-decoration: none;
-      padding: 0.5rem;
-      display: inline-block;
-      transition: all 0.2s ease-in-out;
       animation-name: appear;
       animation-duration: 1s;
 
       @include respond(small) {
-        padding: 0 2rem;
       }
     }
 
     a:hover {
       color: $color-primary;
-      transform: translate(0, -0.1rem);
     }
   }
 
