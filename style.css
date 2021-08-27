@@ -104,7 +104,8 @@ body {
     width: 100vw;
     position: relative;
     left: -0.1rem;
-    bottom: 0.2rem; }
+    bottom: 0.2rem;
+    height: 10rem; }
 
 .impressum {
   width: 100%;
@@ -158,13 +159,10 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding-top: 8rem; }
+  padding-top: 10rem; }
   @media (max-width: 50rem) {
     .header {
       height: fit-content; } }
-  @media (min-width: 131.25rem) {
-    .header {
-      height: 70rem; } }
   .header__outline {
     width: 100vw;
     position: relative;
@@ -175,11 +173,8 @@ body {
     width: 10vw;
     padding-top: 5rem;
     position: relative;
-    left: -40% !important; }
-    @media (max-width: 50rem) {
-      .header__outline__reader {
-        left: 3rem;
-        bottom: -0.3rem; } }
+    left: -40% !important;
+    top: 1rem !important; }
 
 .nav {
   width: 100%;

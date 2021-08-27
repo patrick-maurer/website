@@ -9,6 +9,7 @@
     position: relative;
     left: -0.1rem;
     bottom: 0.2rem;
+    height: 10rem;
   }
 
   @include respond(small) {

@@ -7,15 +7,15 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding-top: 8rem;
+  padding-top: 10rem;
 
   @include respond(small) {
     height: fit-content;
   }
 
-  @include respond(large) {
-    height: 70rem;
-  }
+  // @include respond(large) {
+  //   height: 70rem;
+  // }
 
   &__outline {
     width: 100vw;
@@ -30,9 +30,8 @@
     padding-top: 5rem;
     position: relative;
     left: -40% !important;
+    top: 1rem !important;
     @include respond(small) {
-      left: 3rem;
-      bottom: -0.3rem;
     }
   }
 }
