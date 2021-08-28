@@ -3,14 +3,14 @@
 // elements
 const nav = document.querySelector('.nav')
 const fadeBox = document.querySelector('.fader__textbox')
-const headerImg = document.querySelector('.header')
+const headerImg = document.querySelector('header')
 const contact = document.querySelector('.impressum__contact')
 
 // expand contact
 contact.addEventListener('click', function () {
-  if (contact.textContent == 'Patrick Maurer') {
-    contact.textContent = 'contactDetails'
-  } else contact.textContent = 'Patrick Maurer'
+  if (contact.textContent == 'Contact') {
+    contact.textContent = 'maurerpatrick@protonmail.com'
+  } else contact.textContent = 'Contact'
 })
 
 // fadeBox
