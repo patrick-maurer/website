@@ -1,0 +1,48 @@
+.fader {
+  color: $color-primary;
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 150%;
+  height: fit-content;
+
+  @include respond(small) {
+    font-size: 1.9rem;
+    margin: 0 2rem;
+    position: relative;
+    height: fit-content;
+    padding: 2rem 0rem;
+  }
+
+  @include respond(large) {
+    top: 25rem;
+  }
+
+  &__textbox {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+  }
+
+  &__firstline {
+    text-align: start;
+    animation: appearLeft 2.5s ease;
+    margin-right: 1rem;
+
+    @include respond(small) {
+      animation: appear 2s ease !important;
+    }
+  }
+
+  &__secondline {
+    text-align: left;
+    animation: appearRight 2.5s ease;
+    height: 6rem;
+
+    @include respond(small) {
+      animation: appear 2s ease !important;
+    }
+  }
+}
+
+.hide {
+  opacity: 1;
+}

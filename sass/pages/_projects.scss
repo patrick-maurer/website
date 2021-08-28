@@ -1,0 +1,54 @@
+.main__projects {
+  height: 70rem;
+  background-color: $color-black;
+  height: fit-content;
+  @include hideScrollBar;
+}
+
+.container__projects {
+  margin: 5rem 5rem;
+  color: $color-primary;
+  display: flex;
+
+  &-image {
+    height: 12rem;
+    margin: auto 0;
+    padding: 1rem;
+    border-radius: 2rem;
+    width: auto;
+  }
+
+  &-text {
+    text-align: justify;
+    padding: 2rem 1rem;
+
+    & h2 {
+      text-align: left;
+    }
+  }
+
+  &:nth-last-of-type(2n) {
+    flex-direction: row-reverse;
+  }
+}
+
+@media (max-width: 50rem) {
+  .main__projects {
+    font-size: 0.9rem;
+    margin-bottom: 3rem;
+  }
+  .container__projects {
+    margin: 3rem;
+    color: $color-primary;
+    flex-direction: column !important;
+
+    &-image {
+      width: 10rem;
+      margin: 0 auto;
+      height: auto;
+    }
+    &-text {
+      padding: 3rem 1rem;
+    }
+  }
+}
