@@ -14,11 +14,11 @@
   }
 
   &__outline {
-    width: 100vw;
+    width: 160vw;
     position: relative;
-    left: 0;
+    left: 30%;
     bottom: 0;
-    transform: translate(0, 0.1rem);
+    // transform: translate(0, 0.1rem);
   }
 
   &__outline__reader {

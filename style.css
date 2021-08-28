@@ -164,11 +164,10 @@ body {
     .headerIndex {
       height: fit-content; } }
   .headerIndex__outline {
-    width: 100vw;
+    width: 160vw;
     position: relative;
-    left: 0;
-    bottom: 0;
-    transform: translate(0, 0.1rem); }
+    left: 30%;
+    bottom: 0; }
   .headerIndex__outline__reader {
     width: 10vw;
     padding-top: 5rem;
@@ -270,7 +269,7 @@ body {
 
 .index__main {
   height: fit-content;
-  min-height: 50vh;
+  min-height: 80vh;
   background-color: #000000;
   display: flex;
   align-items: center;
