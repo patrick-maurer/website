@@ -167,7 +167,8 @@ body {
     width: 160vw;
     position: relative;
     left: 30%;
-    bottom: 0; }
+    bottom: 0;
+    overflow: hidden; }
 
 .headerProjects {
   height: fit-content;
