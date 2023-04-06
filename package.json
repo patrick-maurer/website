@@ -1,15 +1,13 @@
 {
-  "name": "my_website",
+  "name": "website",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is my first personal webpage project.",
   "main": "script.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss style.css -w"
+    "compile:sass": "sass sass/main.scss style.css -w"
   },
   "author": "Patrick Maurer",
-  "license": "ISC",
   "devDependencies": {
-    "node-sass": "^6.0.1"
-  },
-  "dependencies": {}
+    "sass": "^1.60.0"
+  }
 }

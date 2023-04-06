@@ -4,6 +4,7 @@
   font-size: 3rem;
   line-height: 150%;
   height: fit-content;
+  margin: 5rem 0rem;
 
   @include respond(small) {
     font-size: 1.9rem;

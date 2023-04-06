@@ -5,6 +5,12 @@
   @include hideScrollBar;
 }
 
+.projects__header{
+  margin: 5rem 0;
+  text-align: center;
+}
+
+
 .container__projects {
   margin: 5rem 5rem;
   color: $color-primary;
@@ -14,7 +20,7 @@
     height: 12rem;
     margin: auto 0;
     padding: 1rem;
-    border-radius: 2rem;
+    border-radius: 0%;
     width: auto;
   }
 
@@ -27,7 +33,7 @@
     }
   }
 
-  &:nth-last-of-type(2n) {
+  &:nth-last-of-type(2n+1) {
     flex-direction: row-reverse;
   }
 }
