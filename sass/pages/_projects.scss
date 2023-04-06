@@ -5,11 +5,6 @@
   @include hideScrollBar;
 }
 
-.projects__header{
-  margin: 5rem 0;
-  text-align: center;
-}
-
 
 .container__projects {
   margin: 5rem 5rem;
@@ -17,10 +12,10 @@
   display: flex;
 
   &-image {
-    height: 12rem;
+    height: 15rem;
     margin: auto 0;
     padding: 1rem;
-    border-radius: 0%;
+    border-radius: 10%;
     width: auto;
   }
 
@@ -49,7 +44,7 @@
     flex-direction: column !important;
 
     &-image {
-      width: 10rem;
+      width: 15rem;
       margin: 0 auto;
       height: auto;
     }

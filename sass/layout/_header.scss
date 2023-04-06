@@ -22,9 +22,9 @@
 }
 
 .headerProjects {
-  height: fit-content;
+  height: 40vh;
   background-size: cover;
-  background-position: top;
+  background-position: center;
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -32,7 +32,7 @@
   padding-top: 10rem;
 
   @include respond(small) {
-    height: fit-content;
+    height: 40vh;
   }
 
   &__outline__reader {
