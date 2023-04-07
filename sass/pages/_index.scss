@@ -6,6 +6,7 @@
   align-items: center;
   justify-content: center;
   height: fit-content;
+  font-size: 1.25rem;
 
   @include hideScrollBar;
 
@@ -50,7 +51,7 @@
 
   &-text {
     @include respond(small) {
-      font-size: 1rem;
+      font-size: 1.15rem;
     }
   }
 }
