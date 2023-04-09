@@ -2,6 +2,7 @@
   height: 70rem;
   background-color: $color-black;
   height: fit-content;
+  font-size: 1.25rem;
   @include hideScrollBar;
 }
 
