@@ -133,7 +133,6 @@ body {
 .footer__outline {
   width: 100vw;
   position: relative;
-  bottom: 0.01rem;
   height: 10rem;
 }
 .impressum {
