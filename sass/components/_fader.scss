@@ -4,7 +4,7 @@
   font-size: 3rem;
   line-height: 150%;
   height: fit-content;
-  margin: 5rem 0rem;
+  margin: 5rem 2rem;
 
   @include respond(small) {
     font-size: 1.9rem;
@@ -24,7 +24,7 @@
   }
 
   &__firstline {
-    text-align: start;
+    text-align: center;
     animation: appearLeft 2.5s ease;
     margin-right: 1rem;
 
@@ -34,7 +34,7 @@
   }
 
   &__secondline {
-    text-align: left;
+    text-align: center;
     animation: appearRight 2.5s ease;
     height: 6rem;
 

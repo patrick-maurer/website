@@ -2,7 +2,7 @@
   height: 70rem;
   background-color: $color-black;
   height: fit-content;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   @include hideScrollBar;
 }
 
@@ -13,11 +13,11 @@
   display: flex;
 
   &-image {
-    height: 15rem;
+    height: 18rem;
     margin: auto 0;
     padding: 1rem;
     filter: brightness(80%) saturate(150%);
-    border-radius: 10%;
+    border-radius: 0%;
     width: auto;
   }
 
@@ -37,7 +37,7 @@
 
 @media (max-width: 50rem) {
   .main__projects {
-    font-size: 0.9rem;
+    font-size:1rem;
     margin-bottom: 3rem;
   }
   .container__projects {

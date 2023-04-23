@@ -4,16 +4,16 @@
   background-color: $color-black;
   display: flex;
   align-items: center;
-  justify-content: center;
   height: fit-content;
-  font-size: 1.25rem;
+  justify-content: center;
+  font-size: 1.125rem;
 
   @include hideScrollBar;
 
   @include respond(small) {
     flex-direction: column;
     justify-content: flex-start;
-    height: 50rem;
+    height: fit-content;
     margin: 3rem 0rem;
   }
 }
@@ -22,36 +22,37 @@
   height: fit-content;
   color: $color-primary;
   display: flex;
-  padding: 0rem 2rem 2rem 2rem;
-  margin: 0rem 2rem 0rem 0rem;
+  padding: 0rem 4rem 2rem 2rem;
+  height: fit-content;
 
   @include respond(small) {
     color: $color-primary;
     display: flex;
     flex-direction: column;
     position: relative;
-    margin: 0rem 4rem;
+    margin: 1rem;
+    padding: 0rem 2rem 2rem 2rem;
   }
 
   &-image {
-    height: 13rem;
-    width: 13rem;
+    height: 18rem;
+    width: auto;
     margin: auto 2rem;
     padding: 1rem;
-    border-radius: 50%;
+    border-radius: 10%;
 
     @include respond(small) {
-      height: 12rem;
-      width: 12rem;
+      height: 15rem;
+      width: auto;
       margin: 2rem auto;
       padding: 1rem;
-      border-radius: 50%;
+      border-radius: 15%;
     }
   }
 
   &-text {
     @include respond(small) {
-      font-size: 1.15rem;
+      font-size: 1rem;
     }
   }
 }

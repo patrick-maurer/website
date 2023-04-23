@@ -16,9 +16,9 @@ contact.addEventListener('click', function () {
 // fadeBox
 let faderIndex = 0;
 let faderText = [
-  'a professional scientist.',
-  'a AI enthusiast.',
-  'a passionate runner.',
+  'I am a professional scientist.',
+  'I am a machine learning enthusiast.',
+  'I am a passionate runner.',
 ];
 
 function fader() {
