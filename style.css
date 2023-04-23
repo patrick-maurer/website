@@ -133,8 +133,7 @@ body {
 .footer__outline {
   width: 100vw;
   position: relative;
-  left: -0.1rem;
-  bottom: 0.2rem;
+  bottom: 0.01rem;
   height: 10rem;
 }
 .impressum {
@@ -212,6 +211,7 @@ body {
   width: 100vw;
   position: relative;
   bottom: 0;
+  transform: translate(0, 0.1rem);
 }
 
 .headerProjects {
@@ -230,16 +230,7 @@ body {
     height: 40vh;
   }
 }
-.headerProjects__outline__reader {
-  width: 10vw;
-  position: relative;
-  left: 10%;
-}
-.headerProjects__outline__thinker {
-  width: 10vw;
-  position: relative;
-  right: 10%;
-}
+
 .nav {
   width: 100%;
   font-weight: 500;

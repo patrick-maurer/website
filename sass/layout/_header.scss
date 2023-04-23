@@ -17,7 +17,7 @@
     width: 100vw;
     position: relative;
     bottom: 0;
-    // transform: translate(0, 0.1rem);
+    transform: translate(0, 0.1rem);
   }
 }
 
@@ -36,19 +36,4 @@
     height: 40vh;
   }
 
-  &__outline__reader {
-    width: 10vw;
-    position: relative;
-    left: 10%;
-    @include respond(small) {
-    }
-  }
-
-  &__outline__thinker {
-    width: 10vw;
-    position: relative;
-    right: 10%;
-    @include respond(small) {
-    }
-  }
 }
